@@ -115,6 +115,10 @@ def get_user_menu(context):
     user = _get_request_user(context)
 
     if not user or (user and not user.is_authenticated):
+        if settings.SOCIALACCOUNT_OIDC_PROVIDER_ENABLED:
+            return [
+                {"label": "Sign in", "type": "link", "href": "/account/geonode_openid_connect/login/?process=login&next=/"},
+            ]
         return [
             {"label": "Register", "type": "link", "href": "/account/signup/?next=/"}
             if settings.ACCOUNT_OPEN_SIGNUP and not Configuration.load().read_only
