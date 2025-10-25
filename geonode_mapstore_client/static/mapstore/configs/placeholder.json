@@ -1,0 +1,4 @@
+{
+    "description": "placeholder response used to prevent redirect with next query params",
+    "response": true
+}
