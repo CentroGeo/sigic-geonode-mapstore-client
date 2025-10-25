@@ -6,7 +6,7 @@ const info = require('@mapstore/project/scripts/utils/info');
 const { commit, version, name } = info();
 
 const appDirectory = fs.realpathSync(process.cwd());
-const staticPath = '/static/mapstore';
+const staticPath = '../static/mapstore';
 const distDirectory = 'dist';
 
 // remove unused compiled directories
