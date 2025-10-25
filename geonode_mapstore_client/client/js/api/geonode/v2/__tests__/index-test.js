@@ -56,7 +56,7 @@ describe('GeoNode v2 api', () => {
             data: {},
             name: 'Map'
         };
-        mockAxios.onPatch(new RegExp(`/api/v2/maps/${id}`))
+        mockAxios.onPatch(new RegExp(`/geonode/api/v2/maps/${id}`))
             .reply((config) => {
                 try {
                     expect(config.data).toBe(JSON.stringify(mapConfiguration));

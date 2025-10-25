@@ -1065,7 +1065,7 @@ describe('Test Resource Utils', () => {
                             title: 'Original',
                             description: null,
                             type: '3dtiles',
-                            download_url: '/api/v2/assets/12/download'
+                            download_url: '/geonode/api/v2/assets/12/download'
                         }
                     },
                     link_type: 'uploaded',
@@ -1081,7 +1081,7 @@ describe('Test Resource Utils', () => {
                             title: null,
                             description: null,
                             type: '3dtiles',
-                            download_url: '/api/v2/assets/12/download'
+                            download_url: '/geonode/api/v2/assets/12/download'
                         }
                     },
                     link_type: 'uploaded',
@@ -1109,7 +1109,7 @@ describe('Test Resource Utils', () => {
                                 title: 'Original',
                                 description: null,
                                 type: '3dtiles',
-                                download_url: '/api/v2/assets/12/download'
+                                download_url: '/geonode/api/v2/assets/12/download'
                             }
                         },
                         link_type: 'uploaded',
@@ -1127,7 +1127,7 @@ describe('Test Resource Utils', () => {
                                 title: 'Original',
                                 description: null,
                                 type: '3dtiles',
-                                download_url: '/api/v2/assets/12/download'
+                                download_url: '/geonode/api/v2/assets/12/download'
                             }
                         },
                         link_type: 'uploaded',
@@ -1143,7 +1143,7 @@ describe('Test Resource Utils', () => {
                                 title: null,
                                 description: null,
                                 type: '3dtiles',
-                                download_url: '/api/v2/assets/12/download'
+                                download_url: '/geonode/api/v2/assets/12/download'
                             }
                         },
                         link_type: 'uploaded',

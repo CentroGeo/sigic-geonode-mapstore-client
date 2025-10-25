@@ -39,22 +39,22 @@ import { parseIcon } from '@js/utils/SearchUtils';
 
 let endpoints = {
     // default values
-    'resources': '/api/v2/resources',
-    'documents': '/api/v2/documents',
-    'datasets': '/api/v2/datasets',
-    'maps': '/api/v2/maps',
-    'geoapps': '/api/v2/geoapps',
-    'users': '/api/v2/users',
-    'resource_types': '/api/v2/resources/resource_types',
-    'categories': '/api/v2/categories',
-    'owners': '/api/v2/owners',
-    'keywords': '/api/v2/keywords',
-    'regions': '/api/v2/regions',
-    'groups': '/api/v2/groups',
-    'uploads': '/api/v2/uploads',
-    'status': '/api/v2/resource-service/execution-status',
-    'exectionRequest': '/api/v2/executionrequest',
-    'facets': '/api/v2/facets'
+    'resources': '/geonode/api/v2/resources',
+    'documents': '/geonode/api/v2/documents',
+    'datasets': '/geonode/api/v2/datasets',
+    'maps': '/geonode/api/v2/maps',
+    'geoapps': '/geonode/api/v2/geoapps',
+    'users': '/geonode/api/v2/users',
+    'resource_types': '/geonode/api/v2/resources/resource_types',
+    'categories': '/geonode/api/v2/categories',
+    'owners': '/geonode/api/v2/owners',
+    'keywords': '/geonode/api/v2/keywords',
+    'regions': '/geonode/api/v2/regions',
+    'groups': '/geonode/api/v2/groups',
+    'uploads': '/geonode/api/v2/uploads',
+    'status': '/geonode/api/v2/resource-service/execution-status',
+    'exectionRequest': '/geonode/api/v2/executionrequest',
+    'facets': '/geonode/api/v2/facets'
 };
 
 const RESOURCES = 'resources';
@@ -79,7 +79,7 @@ export const setEndpoints = (data) => {
  */
 export const getEndpoints = () => {
     const apikey = getApiToken();
-    const endpointV2 = getGeoNodeLocalConfig('geoNodeApi.endpointV2', '/api/v2/');
+    const endpointV2 = getGeoNodeLocalConfig('geoNodeApi.endpointV2', '/geonode/api/v2/');
     return axios.get(parseDevHostname(endpointV2), {
         params: {
             ...(apikey && { apikey })
@@ -599,7 +599,7 @@ export const getDatasetsByName = names => {
 };
 
 export const getResourcesTotalCount = () => {
-    return axios.get('/api/v2/resources/resource_types')
+    return axios.get('/geonode/api/v2/resources/resource_types')
         .then(({ data }) => data.resource_types)
         .then((resourceTypes) => {
             const keysMap = {
