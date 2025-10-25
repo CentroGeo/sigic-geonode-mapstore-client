@@ -117,7 +117,7 @@ const getFeatureStyle = (type, isDrawn) => {
         opacity: 0,
         size: 16,
         fillOpacity: 1,
-        symbolUrl: '/static/mapstore/symbols/plus.svg'
+        symbolUrl: '/geonode/static/mapstore/symbols/plus.svg'
     };
 };
 

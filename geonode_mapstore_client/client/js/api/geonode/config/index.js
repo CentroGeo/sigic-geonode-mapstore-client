@@ -12,7 +12,7 @@ import { getGeoNodeLocalConfig } from '@js/utils/APIUtils';
 
 let cache = {};
 
-export const getNewMapConfiguration = (newMapUrl = '/static/mapstore/configs/map.json') => {
+export const getNewMapConfiguration = (newMapUrl = '/geonode/static/mapstore/configs/map.json') => {
     return cache.newMapConfig
         ? new Promise((resolve) => resolve(cache.newMapConfig))
         : axios.get(newMapUrl).then(({ data }) => {
@@ -25,7 +25,7 @@ export const getNewMapConfiguration = (newMapUrl = '/static/mapstore/configs/map
             );
 };
 
-export const getNewGeoStoryConfig = (newGeoStoryUrl = '/static/mapstore/configs/geostory.json') => {
+export const getNewGeoStoryConfig = (newGeoStoryUrl = '/geonode/static/mapstore/configs/geostory.json') => {
     return cache.newGeoStoryConfig
         ? new Promise((resolve) => resolve(cache.newGeoStoryConfig))
         : axios.get(newGeoStoryUrl).then(({ data }) => {
@@ -38,7 +38,7 @@ export const getNewGeoStoryConfig = (newGeoStoryUrl = '/static/mapstore/configs/
             );
 };
 
-export const getStyleTemplates = (styleTemplatesUrl = '/static/mapstore/configs/styleTemplates.json') => {
+export const getStyleTemplates = (styleTemplatesUrl = '/geonode/static/mapstore/configs/styleTemplates.json') => {
     return cache.styleTemplatesConfig
         ? new Promise((resolve) => resolve(cache.styleTemplatesConfig))
         : axios.get(styleTemplatesUrl).then(({ data }) => {

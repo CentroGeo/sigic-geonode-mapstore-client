@@ -40,9 +40,9 @@
   },
   "mapstore": {
     "output": "dist",
-    "publicPath": "/static/mapstore/dist/",
+    "publicPath": "/geonode/static/mapstore/dist/",
     "themePrefix": "msgapi",
-    "cesiumBaseUrl": "/static/mapstore/dist/cesium",
+    "cesiumBaseUrl": "/geonode/static/mapstore/dist/cesium",
     "apps": [
       "js/apps"
     ],

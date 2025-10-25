@@ -176,7 +176,7 @@ export function setupConfiguration({
     const { query } = url.parse(window.location.href, true);
     // set the extensions path before get the localConfig
     // so it's possible to override in a custom project
-    setConfigProp('extensionsRegistry', '/static/mapstore/extensions/index.json');
+    setConfigProp('extensionsRegistry', '/geonode/static/mapstore/extensions/index.json');
     const {
         supportedLocales: defaultSupportedLocales,
         ...config
@@ -189,7 +189,7 @@ export function setupConfiguration({
         ? geoNodePageConfig.translationsPath
         : config.translationsPath
             ? config.translationsPath
-            : ['/static/mapstore/ms-translations', '/static/mapstore/gn-translations']
+            : ['/geonode/static/mapstore/ms-translations', '/geonode/static/mapstore/gn-translations']
     );
     const supportedLocales = languagesToSupportedLocales(geoNodePageConfig.languages) || defaultSupportedLocales || getSupportedLocales();
     setSupportedLocales(supportedLocales);
