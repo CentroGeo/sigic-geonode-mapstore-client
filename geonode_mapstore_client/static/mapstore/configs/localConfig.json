@@ -3823,7 +3823,7 @@
                                 "value": "map",
                                 "type": "link",
                                 "variant": "primary",
-                                "href": "{context.getCataloguePath('/geonode/catalogue/#/map/new')}"
+                                "href": "{context.getCataloguePath('/catalogue/#/map/new')}"
                             }
                         ],
                         "filtersFormItems": [
@@ -3916,7 +3916,7 @@
                                 "labelId": "gnhome.new",
                                 "value": "document",
                                 "type": "link",
-                                "href": "{context.getCataloguePath('/geonode/catalogue/#/upload/document')}"
+                                "href": "{context.getCataloguePath('/catalogue/#/upload/document')}"
                             }
                         ],
                         "filtersFormItems": [
@@ -4014,7 +4014,7 @@
                                 "labelId": "gnhome.new",
                                 "value": "dashboard",
                                 "type": "link",
-                                "href": "{context.getCataloguePath('/geonode/catalogue/#/dashboard/new')}"
+                                "href": "{context.getCataloguePath('/catalogue/#/dashboard/new')}"
                             }
                         ],
                         "filtersFormItems": [
@@ -4113,7 +4113,7 @@
                                         "labelId": "gnhome.uploadDataset",
                                         "value": "layer",
                                         "type": "link",
-                                        "href": "{context.getCataloguePath('/geonode/catalogue/#/upload/dataset')}"
+                                        "href": "{context.getCataloguePath('/catalogue/#/upload/dataset')}"
                                     },
                                     {
                                         "labelId": "gnhome.createDataset",
@@ -4246,7 +4246,7 @@
                                 "labelId": "gnhome.new",
                                 "value": "geostory",
                                 "type": "link",
-                                "href": "{context.getCataloguePath('/geonode/catalogue/#/geostory/new')}"
+                                "href": "{context.getCataloguePath('/catalogue/#/geostory/new')}"
                             }
                         ],
                         "filtersFormItems": [
