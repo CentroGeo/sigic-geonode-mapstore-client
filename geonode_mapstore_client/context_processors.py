@@ -49,7 +49,7 @@ def resource_urls(request):
         "TRANSLATIONS_PATH": getattr(
             settings,
             "MAPSTORE_TRANSLATIONS_PATH",
-            ["/static/mapstore/ms-translations", "/static/mapstore/gn-translations"],
+            ["/geonode/static/mapstore/ms-translations", "/geonode/static/mapstore/gn-translations"],
         ),
         "PROJECTION_DEFS": getattr(settings, "MAPSTORE_PROJECTION_DEFS", []),
         "PLUGINS_CONFIG_PATCH_RULES": getattr(
