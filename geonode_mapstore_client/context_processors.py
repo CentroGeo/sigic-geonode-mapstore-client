@@ -56,7 +56,7 @@ def resource_urls(request):
             settings, "MAPSTORE_PLUGINS_CONFIG_PATCH_RULES", []
         ),
         "EXTENSIONS_FOLDER_PATH": getattr(
-            settings, "MAPSTORE_EXTENSIONS_FOLDER_PATH", "/static/mapstore/extensions/"
+            settings, "MAPSTORE_EXTENSIONS_FOLDER_PATH", "/geonode/static/mapstore/extensions/"
         ),
         "CUSTOM_FILTERS": getattr(settings, "MAPSTORE_CUSTOM_FILTERS", None),
         "TIME_ENABLED": getattr(settings, "UPLOADER", dict())
